@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "globals": {},
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "no-underscore-dangle": [
+      "error",
+      { "allow": ["_id", "__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"] }
+    ],
+    "no-console": ["error", { "allow": ["warn", "info", "error"] }]
+  }
+}

@@ -1,0 +1,13 @@
+.container-svg {
+  position: relative;
+  margin-right: 0;
+}
+
+svg {
+  height: 200px;
+  transform: rotate(-90deg);
+}
+
+path {
+  transition: .3s;
+}

@@ -1,0 +1,85 @@
+.header {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1440px;
+  height: 70px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  display: inline-block;
+  width: 400px;
+  margin: 0;
+}
+
+#inputAddNew {
+  position: absolute;
+  top: 0;
+  right: 220px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+#inputAddNew:checked ~ label[for="inputAddNew"]::before {
+  background-color: orangeRed;
+}
+
+#inputAddNew:checked ~ label[for="inputAddNew"]::after {
+  right: 4px;
+}
+
+#inputAddNew:checked ~ .add-new-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+.label-add-new {
+  position: absolute;
+  top: 2px;
+  right: 220px;
+  height: 26px;
+  padding: 0 50px 0 0;
+  cursor: pointer;
+  line-height: 26px;
+}
+
+.label-add-new::before {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 40px;
+  height: 22px;
+  content: '';
+  background-color: #dedede;
+  border-radius: 10px;
+  transition: background-color .3s;
+}
+
+.label-add-new::after {
+  position: absolute;
+  top: 4px;
+  right: 22px;
+  width: 18px;
+  height: 18px;
+  content: '';
+  background-color: white;
+  border-radius: 50%;
+  transition: background-color .3s, right .3s;
+}
+
+.add-new-container {
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  opacity: 0;
+  background-color: #ffffff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+  transition: opacity .3s, visibility .3s;
+}

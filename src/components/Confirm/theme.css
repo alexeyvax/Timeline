@@ -1,0 +1,30 @@
+.confirm-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.confirm {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  width: 200px;
+  padding: 40px 40px 30px;
+  background-color: #dedede;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.confirm span {
+  display: block;
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.confirm div {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,25 @@
+.main-table {
+  position: relative;
+  z-index: 1;
+  overflow: auto;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: calc(100vh - 270px);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.frozen-container {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  width: 220px;
+}
+
+.scroll-container {
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 220px);
+  height: 100%;
+}

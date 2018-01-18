@@ -1,0 +1,17 @@
+.warning {
+  color: red;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.hint {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  padding: 10px 20px;
+  white-space: nowrap;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #dfdfdf;
+  transform: translateX(-50%);
+}

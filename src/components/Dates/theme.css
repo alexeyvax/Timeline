@@ -1,0 +1,49 @@
+.dates-container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+  padding: 10px 0 0;
+  margin: 0 0 2px;
+  box-sizing: border-box;
+  background-color: #dddddd;
+}
+
+.dates {
+  white-space: nowrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.dates li {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.dates li.current {
+  background-color: orangeRed;
+}
+
+.dates li.current span {
+  color: white;
+}
+
+span.day {
+  display: block;
+  font-size: 12px;
+}
+
+span.number {
+  display: block;
+  font-size: 10px;
+}

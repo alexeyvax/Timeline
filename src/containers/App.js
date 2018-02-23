@@ -2,11 +2,11 @@ import { connect } from 'react-redux';
 import App from '../components/App.jsx';
 import * as act from '../actions';
 
-const mapStateToProps = state => ({
-  loaded: state.data.loaded,
-  projects: state.data.projects,
-  employeesLength: state.data.employees.length,
-  isConfirmOpened: state.confirm.isConfirmOpened,
+const mapStateToProps = ({ data, confirm }) => ({
+  loaded: data.loaded,
+  projects: data.projects,
+  employeesLength: data.employees.length,
+  isConfirmOpened: confirm.isConfirmOpened,
 });
 
 const mapDispatchToProps = dispatch => ({

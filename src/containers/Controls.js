@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import Controls from '../components/Dates/Controls/Controls.jsx';
 import * as act from '../actions';
 
-const mapStateToProps = state => ({});
+const mapStateToProps = () => ({});
 
 const mapDispatchToProps = dispatch => ({
   toPrevMonth: () =>

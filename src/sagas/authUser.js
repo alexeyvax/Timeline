@@ -25,6 +25,7 @@ function* registration() {
   const passwd = yield select(getRegistrationPasswd);
   const res = yield call(api.authUser.registration, { login, passwd });
 
+
   if (res && login) {
     yield notification('Congratulation', `${res} - ${login}`);
     yield put({ type: act.RESET_REGISTRATION_FIELDS });

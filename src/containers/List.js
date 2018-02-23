@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import List from '../components/List/List.jsx';
 import * as act from '../actions';
 
-const mapStateToProps = state => ({});
+const mapStateToProps = () => ({});
 
 const mapDispatchToProps = dispatch => ({
   save: (type, name, id) =>

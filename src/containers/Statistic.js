@@ -2,9 +2,9 @@ import { connect } from 'react-redux';
 import Statistic from '../components/Statistic/Statistic.jsx';
 import * as act from '../actions';
 
-const mapStateToProps = state => ({
-  isVisibleStatistic: state.statistic.isVisibleStatistic,
-  statistic: state.statistic.all,
+const mapStateToProps = ({ statistic }) => ({
+  isVisibleStatistic: statistic.isVisibleStatistic,
+  statistic: statistic.all,
 });
 
 const mapDispatchToProps = dispatch => ({

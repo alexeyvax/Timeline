@@ -39,6 +39,7 @@
     "mock-local-storage": "^1.0.5",
     "mongodb": "^2.2.29",
     "path": "^0.12.7",
+    "pre-commit": "^1.2.2",
     "react-scripts": "1.0.7",
     "react-test-renderer": "^16.0.0",
     "stylelint": "^8.2.0",
@@ -51,9 +52,14 @@
     "watchSwagger": "./node_modules/.bin/gulp watch",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js && stylelint \"**/*.css\"",
+    "eslint": "eslint src/**/*.js",
     "stylelint": "stylelint \"**/*.css\"",
     "stylelintAutoFix": "stylelint --fix \"**/*.css\""
   },
+  "pre-commit": [
+    "lint"
+  ],
   "engines": {
     "node": ">=7.6.0"
   }

@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import AddNew from '../components/AddNew/AddNew.jsx';
 import * as act from '../actions';
 
-const mapStateToProps = state => ({});
+const mapStateToProps = () => ({});
 
 const mapDispatchToProps = dispatch => ({
   onAddNew: (type, name, color) =>

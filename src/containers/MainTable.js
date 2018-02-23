@@ -2,11 +2,11 @@ import { connect } from 'react-redux';
 import MainTable from '../components/MainTable/MainTable.jsx';
 import * as act from '../actions';
 
-const mapStateToProps = state => ({
-  dates: state.data.dates,
-  employees: state.data.employees,
-  isRemove: state.data.isRemove,
-  currentProjectData: state.data.currentProjectData,
+const mapStateToProps = ({ data }) => ({
+  dates: data.dates,
+  employees: data.employees,
+  isRemove: data.isRemove,
+  currentProjectData: data.currentProjectData,
 });
 
 const mapDispatchToProps = dispatch => ({

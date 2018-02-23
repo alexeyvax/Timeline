@@ -2,14 +2,14 @@ import { connect } from 'react-redux';
 import Auth from '../components/Auth/Auth.jsx';
 import * as act from '../actions';
 
-const mapStateToProps = state => ({
-  login: state.authUser.login,
-  password: state.authUser.password,
-  registrationLogin: state.authUser.registrationLogin,
-  registrationPassword: state.authUser.registrationPassword,
-  warning: state.authUser.warning,
-  authWarning: state.authUser.authWarning,
-  redirectToReferrer: state.authUser.redirectToReferrer,
+const mapStateToProps = ({ authUser }) => ({
+  login: authUser.login,
+  password: authUser.password,
+  registrationLogin: authUser.registrationLogin,
+  registrationPassword: authUser.registrationPassword,
+  warning: authUser.warning,
+  authWarning: authUser.authWarning,
+  redirectToReferrer: authUser.redirectToReferrer,
 });
 
 const mapDispatchToProps = dispatch => ({

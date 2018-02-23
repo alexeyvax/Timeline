@@ -9,33 +9,33 @@ const initialState = {
   registrationLogin: '',
   registrationPassword: '',
 };
-export default function auth(state = initialState, action) {
-  switch (action.type) {
+export default function auth(state = initialState, { type, payload }) {
+  switch (type) {
     case act.HANDLE_CHANGE_LOGIN:
       return {
         ...state,
-        login: action.payload.login,
+        login: payload.login,
         authWarning: false,
       };
 
     case act.HANDLE_CHANGE_PASSWD:
       return {
         ...state,
-        password: action.payload.passwd,
+        password: payload.passwd,
         authWarning: false,
       };
 
     case act.HANDLE_CHANGE_REGISTRATION_LOGIN:
       return {
         ...state,
-        registrationLogin: action.payload.login,
+        registrationLogin: payload.login,
         warning: false,
       };
 
     case act.HANDLE_CHANGE_REGISTRATION_PASSWD:
       return {
         ...state,
-        registrationPassword: action.payload.passwd,
+        registrationPassword: payload.passwd,
         warning: false,
       };
 

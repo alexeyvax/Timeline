@@ -3,7 +3,7 @@ import Confirm from '../components/Confirm/Confirm.jsx';
 import { KEYCODE } from '../constants';
 import * as act from '../actions';
 
-const mapStateToProps = state => ({});
+const mapStateToProps = () => ({});
 
 const mapDispatchToProps = dispatch => ({
   onRemove: () =>

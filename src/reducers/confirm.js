@@ -5,13 +5,13 @@ const initialState = {
   removeElement: null,
 };
 
-export default function confirm(state = initialState, action) {
-  switch (action.type) {
+export default function confirm(state = initialState, { type, payload }) {
+  switch (type) {
     case act.SHOW_REMOVE_CONFIRM:
       return {
         ...state,
         isConfirmOpened: true,
-        removeElement: action.payload,
+        removeElement: payload,
       };
 
     case act.HIDE_REMOVE_CONFIRM:

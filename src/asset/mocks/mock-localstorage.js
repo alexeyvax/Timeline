@@ -1,4 +1,5 @@
-import localStorage from 'mock-local-storage';
+/* disable line because it usage in the tests */
+import localStorage from 'mock-local-storage'; // eslint-disable-line
 
 global.window = {};
 

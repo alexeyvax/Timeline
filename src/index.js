@@ -17,6 +17,8 @@ ReactDOM.render(
       <div>
         {(!session && window.location.pathname !== '/auth')
           && <Redirect path='/' to='/auth' />}
+        {(session && window.location.pathname !== '/swagger')
+          && <Redirect path='/' to='/protected' />}
         <Route path='/auth' component={Auth} />
         <Route path='/protected' component={App} />
         <Route path='/swagger' component={Swagger} />

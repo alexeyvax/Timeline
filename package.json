@@ -52,10 +52,10 @@
     "watchSwagger": "./node_modules/.bin/gulp watch",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint \"**/*.js\" && stylelint \"**/*.css\"",
-    "eslint": "eslint \"**/*.js\"",
-    "stylelint": "stylelint \"**/*.css\"",
-    "stylelintAutoFix": "stylelint --fix \"**/*.css\""
+    "lint": "./node_modules/.bin/eslint \"src/**/*.js\" && ./node_modules/.bin/stylelint \"src/**/*.css\"",
+    "eslint": "./node_modules/.bin/eslint \"src/**/*.js\"",
+    "stylelint": "./node_modules/.bin/stylelint \"src/**/*.css\"",
+    "stylelintAutoFix": "./node_modules/.bin/stylelint --fix \"src/**/*.css\""
   },
   "pre-commit": [
     "lint"
